@@ -81,8 +81,8 @@ mkdir -p /engn001/apache/2.4/servers/webd-apache_80;
 cp -r /engn001/apache/2.4/conf /engn001/apache/2.4/servers/webd-apache_80;
 mkdir -p /logs/apache/2.4/logs;
 ln -s /logs/apache/2.4/logs /engn001/apache/2.4/servers/webd-apache_80;
-cp ${DEFAULT_LOC}/*.sh /engn001/apache/2.4/servers/webd-apache_80;
-cp ${DEFAULT_LOC}/httpd.conf /engn001/apache/2.4/servers/webd-apache_80/conf
+cp ./*.sh /engn001/apache/2.4/servers/webd-apache_80;
+cp ./httpd.conf /engn001/apache/2.4/servers/webd-apache_80/conf
 chmod -R 755 /engn001/apache;
 chown -R dextop:dextop /engn001/apache;
 su - dextop -c '/engn001/apache/2.4/servers/webd-apache_80/start.sh';
