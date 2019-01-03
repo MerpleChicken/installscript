@@ -2,7 +2,7 @@
 
 . /engn001/apache/2.4/servers/webd-apache_80/env.sh
 
-SETUSER=${WAS_USER}
+SETUSER=${RUN_USER}
 RUNNER=`whoami`
 
 if [ ${RUNNER} != ${SETUSER} ] ;
